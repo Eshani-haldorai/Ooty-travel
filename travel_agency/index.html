@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags tell the browser how to render the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Affordable Ooty travel packages, cab services, and sightseeing tours. Book Vihaan Travels for the best experience in Ooty.">
+    <meta name="keywords" content="Travel Agency, Ooty, South India tours, Munnar, Coorg, Hill Station trips, Vihaan Travels">
+    <title>Vihaan Travels Ooty | Best Cab & Travel Services in Ooty</title>
+
+    <!-- Link to our CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts: Inter for a modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">Vihaan Travels</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact" class="btn-primary">Book Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content container">
+                <h1>Best Travel & Cab Services in Ooty</h1>
+                <p>Safe and comfortable journeys in our premium Ooty-registered cars.</p>
+                <a href="#destinations" class="btn-primary">Book Your Ride</a>
+            </div>
+        </section>
+
+        <!-- About Us Section (NEW) -->
+        <section id="about" class="container" style="padding: 60px 20px;">
+            <div class="about-content" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop"
+                        alt="About Vihaan Travels"
+                        style="width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: var(--text-color);">About Vihaan Travels
+                    </h2>
+                    <p style="margin-bottom: 20px; font-size: 1.1rem; color: #555;">
+                        We are a locally rooted travel agency based in the heart of Ooty. With over 10 years of
+                        experience navigating the Nilgiris, we don't just drive you; we guide you through the hidden
+                        gems of South India.
+                    </p>
+                    <p style="margin-bottom: 20px; font-size: 1.1rem; color: #555;">
+                        Our mission is simple: to provide safe, comfortable, and memorable journeys. Whether it's a
+                        family vacation, a honeymoon trip, or an adventure with friends, our fleet of premium cars and
+                        expert drivers ensure smooth rides on every curve.
+                    </p>
+                    <ul style="list-style: none; display: flex; gap: 20px; margin-top: 20px;">
+                        <li>✅ <strong>5000+</strong> Happy Travelers</li>
+                        <li>✅ <strong>50+</strong> Expert Drivers</li>
+                        <li>✅ <strong>24/7</strong> Support</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services / Why Choose Us -->
+        <section id="services" class="container"
+            style="padding: 60px 20px; text-align: center; background-color: var(--light-bg);">
+            <h2 style="font-size: 2.5rem; margin-bottom: 40px; color: var(--text-color);">Why Travel With Us?</h2>
+            <div class="services-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                <div class="service-card"
+                    style="padding: 30px; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-radius: 10px;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">🏔️</div>
+                    <h3 style="margin-bottom: 10px; color: var(--primary-color);">Local Experts</h3>
+                    <p>We are based in Ooty and know every hidden gem in the Nilgiris and beyond.</p>
+                </div>
+                <div class="service-card"
+                    style="padding: 30px; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-radius: 10px;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">🚗</div>
+                    <h3 style="margin-bottom: 10px; color: var(--primary-color);">Premium Fleet</h3>
+                    <p>Travel in comfort with our well-maintained, Ooty-registered cars designed for hill driving.</p>
+                </div>
+                <div class="service-card"
+                    style="padding: 30px; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-radius: 10px;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">🛡️</div>
+                    <h3 style="margin-bottom: 10px; color: var(--primary-color);">Safe Drivers</h3>
+                    <p>Experienced drivers skilled in navigating steep terrains and hairpin bends safely.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Destinations Section -->
+        <section id="destinations" class="container" style="padding: 80px 20px;">
+            <h2 style="text-align: center; margin-bottom: 50px; font-size: 2.5rem;">Popular Destinations</h2>
+            <div class="grid" id="destinations-grid">
+                <!-- JavaScript will put the cards here! -->
+            </div>
+        </section>
+
+        <!-- Photo Gallery for Places Section -->
+        <section id="gallery" class="container" style="padding: 60px 20px; text-align: center;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 40px; color: var(--text-color);">Beautiful Places We Explore</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <img src="munnar_tea_estate.png" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" alt="Munnar Tea Estate">
+                <img src="athirapilly_waterfalls.png" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" alt="Athirappilly Waterfalls">
+                <img src="hill_station_mist.png" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" alt="Hill Station Mist">
+                <img src="greenery_hills.png" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" alt="Lush Green Hills">
+            </div>
+        </section>
+
+        <!-- Our Fleet Section -->
+        <section id="fleet" class="container" style="padding: 60px 20px; text-align: center; background-color: var(--light-bg); border-radius: 10px; margin-bottom: 60px;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 40px; color: var(--text-color);">Our Premium Car Fleet</h2>
+            <p style="margin-bottom: 30px; font-size: 1.1rem; color: #555;">Travel comfortably in our clean, well-maintained vehicles.</p>
+            <div class="fleet-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div class="fleet-card" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <img src="white_5_seater.png" style="width: 100%; height: 220px; object-fit: cover;" alt="White 5-Seater SUV">
+                    <div style="padding: 20px;">
+                        <h3 style="color: var(--primary-color);">White 5-Seater SUV</h3>
+                        <p style="color: #666; margin-top: 10px;">Perfect for families and small groups on hill station roads.</p>
+                    </div>
+                </div>
+                <div class="fleet-card" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <img src="white_swift.png" style="width: 100%; height: 220px; object-fit: cover;" alt="White Swift">
+                    <div style="padding: 20px;">
+                        <h3 style="color: var(--primary-color);">White Maruti Swift</h3>
+                        <p style="color: #666; margin-top: 10px;">Perfect for a smooth and comfortable journey in the hills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section (NEW) -->
+        <section id="testimonials" class="container"
+            style="padding: 60px 20px; text-align: center; background-color: #fff8f0;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 40px; color: var(--text-color);">Happy Travelers</h2>
+            <div class="testimonial-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div class="testimonial-card"
+                    style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <p style="font-style: italic; color: #555; margin-bottom: 20px;">"The driver was so polite and knew
+                        exactly where to stop for the best photos in Coorg. Highly recommended!"</p>
+                    <h4 style="color: var(--primary-color);">- Anjali & Rahul, Bangalore</h4>
+                </div>
+                <div class="testimonial-card"
+                    style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <p style="font-style: italic; color: #555; margin-bottom: 20px;">"Vihaan Travels made our Ooty trip
+                        unforgettable. The car was clean and comfortable for my parents."</p>
+                    <h4 style="color: var(--primary-color);">- The Sharma Family, Mumbai</h4>
+                </div>
+                <div class="testimonial-card"
+                    style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <p style="font-style: italic; color: #555; margin-bottom: 20px;">"Hassle-free booking and excellent
+                        service. Munnar looked even more beautiful with their local guidance."</p>
+                    <h4 style="color: var(--primary-color);">- David, Chennai</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (NEW) -->
+        <section id="contact" class="container" style="padding: 80px 20px;">
+            <div class="contact-wrapper" style="display: flex; gap: 50px; flex-wrap: wrap;">
+                <div class="contact-info" style="flex: 1; min-width: 300px;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Plan Your Trip Today!</h2>
+                    <p style="margin-bottom: 30px; color: #555;">Fill out the form and our travel experts will get back
+                        to you within 24 hours with a customized itinerary.</p>
+                    <div class="contact-item" style="margin-bottom: 20px;">
+                        <h4 style="margin-bottom: 5px;">📞 Phone</h4>
+                        <p>+91 97896 90423</p>
+                    </div>
+                    <div class="contact-item" style="margin-bottom: 20px;">
+                        <h4 style="margin-bottom: 5px;">📧 Email</h4>
+                        <p>ajitharish630@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4 style="margin-bottom: 5px;">📍 Office</h4>
+                        <p>Commercial Road, Ooty, Tamil Nadu</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container"
+                    style="flex: 1; min-width: 300px; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                    <form id="booking-form">
+                        <div style="margin-bottom: 20px;">
+                            <label for="name" style="display: block; margin-bottom: 8px; font-weight: 600;">Full
+                                Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required
+                                style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label for="email" style="display: block; margin-bottom: 8px; font-weight: 600;">Email
+                                Address</label>
+                            <input type="email" id="email" placeholder="john@example.com" required
+                                style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label for="destination-select"
+                                style="display: block; margin-bottom: 8px; font-weight: 600;">Interested
+                                Destination</label>
+                            <select id="destination-select"
+                                style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                                <option value="General Inquiry">General Inquiry / Custom Trip</option>
+                                <optgroup label="Tamil Nadu">
+                                    <option value="Ooty">Ooty</option>
+                                    <option value="Kodaikanal">Kodaikanal</option>
+                                    <option value="Chennai">Chennai</option>
+                                    <option value="Madurai">Madurai</option>
+                                    <option value="Rameshwaram">Rameshwaram</option>
+                                    <option value="Kanyakumari">Kanyakumari</option>
+                                    <option value="Mahabalipuram">Mahabalipuram</option>
+                                    <option value="Yercaud">Yercaud</option>
+                                </optgroup>
+                                <optgroup label="Kerala">
+                                    <option value="Munnar">Munnar</option>
+                                    <option value="Alleppey">Alleppey (Houseboat)</option>
+                                    <option value="Wayanad">Wayanad</option>
+                                    <option value="Thekkady">Thekkady</option>
+                                    <option value="Varkala">Varkala</option>
+                                    <option value="Kovalam">Kovalam</option>
+                                    <option value="Kumarakom">Kumarakom</option>
+                                </optgroup>
+                                <optgroup label="Karnataka">
+                                    <option value="Coorg">Coorg</option>
+                                    <option value="Mysore">Mysore</option>
+                                    <option value="Chikmagalur">Chikmagalur</option>
+                                    <option value="Hampi">Hampi</option>
+                                    <option value="Gokarna">Gokarna</option>
+                                    <option value="Dandeli">Dandeli</option>
+                                </optgroup>
+                                <optgroup label="Andhra Pradesh & Telangana">
+                                    <option value="Tirupati">Tirupati</option>
+                                    <option value="Visakhapatnam">Visakhapatnam (Vizag)</option>
+                                    <option value="Araku Valley">Araku Valley</option>
+                                    <option value="Hyderabad">Hyderabad</option>
+                                </optgroup>
+                                <option value="Other">Other (Please specify in message)</option>
+                            </select>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label for="message" style="display: block; margin-bottom: 8px; font-weight: 600;">Message /
+                                Specific Requirements</label>
+                            <textarea id="message" rows="4" placeholder="I want to visit enjoying tea estates..."
+                                style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary"
+                            style="width: 100%; border: none; cursor: pointer;">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Destination Details (NEW) -->
+    <div id="destination-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Area -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Vihaan Travels</h3>
+                <p>Your trusted partner for exploring the beautiful hills of South India in comfort and style.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Phone: +91 97896 90423</p>
+                <p>Email: ajitharish630@gmail.com</p>
+                <p>Address: Commercial Road, Ooty, Tamil Nadu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Stay updated with our latest offers.</p>
+                <div class="social-links">
+                    <a href="#">Instagram</a> | <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Vihaan Travels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to our JavaScript file for interactivity -->
+    <script src="script.js"></script>
+</body>
+
+</html>
